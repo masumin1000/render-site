@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background: #f6f1e8;
+  color: #4a4a4a;
+}
+
+/* ヒーロー */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 店主 */
+.owner {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 16px;
+}
+
+.owner-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+}
+
+.owner-text h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+/* メニュー */
+.menu {
+  padding: 20px;
+}
+
+.menu h2 {
+  margin-bottom: 12px;
+}
+
+.menu-list {
+  display: flex;
+  gap: 12px;
+}
+
+.menu-item {
+  text-align: center;
+  flex: 1;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.menu-item p {
+  background: #e9dfcf;
+  margin-top: 6px;
+  padding: 4px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* 営業時間 */
+
+.info h2 {
+  font-size: 30px;
+}
+
+.info p {
+  font-size: 28px;
+}
+
+.info {
+  background: #e9dfcf;
+  padding: 20px;
+}
+
+
+/* アクセス */
+
+.access {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.map {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+.map-wrap {
+  width: 100%;
+  height: 220px;          /* ← ここで大きさを完全に固定 */
+  overflow: hidden;       /* ← はみ出し完全防止 */
+  border-radius: 8px;
+}
+
+.map-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+.info,
+.access {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+
+}
+.info-area {
+  display: flex;     /* ←これが最重要 */
+  gap: 40px;
+}
+
+/* フッター */
+.footer {
+  background: #8b6b4e;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+}
+<div class="shop-photo">
+  <img src="shop.jpg" alt="店舗外観">
+  <p class="shop-name">喫茶 吉田</p>
+</div>
+.shop-photo {
+  text-align: center;
+}
+
+.shop-photo img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;   /* ←重要 */
+  margin: 0 auto;
+}
+
+.shop-name {喫茶　吉田
+  margin-top: 12px; /* 写真との間隔 */
+  font-size: 50px;  /* ←文字を大きく */
+  font-weight: bold;
+}
+.shop-name {
+  letter-spacing: 0.1em;
+  color: #4a3b2a;
+}
+.info-area {
+  display: flex;              /* ← 横並びの魔法 */
+  gap: 40px;                  /* 左右の間隔 */
+  padding: 30px;
+  background: #e9dfcf;
+}
+.info,
+.access {
+  width: 50%;
+}
+
+.info h2,
+.access h2 {
+  font-size: 28px;
+}
+
+.info p,
+.access p {
+  font-size: 18px;
+}
+
+.open-time {
+  font-size: 36px;
+  font-weight: bold;
+}
+.map {
+  margin-top: 15px;
+  height: 200px;
+  background: #ccc;
+  text-align: center;
+  line-height: 200px;
+}
+@media screen and (max-width: 768px) {
+  .info-area {
+    flex-direction: column;   /* 縦並びにする */
+  }
+
+  .info,
+  .access {
+    width: 100%;
+  }
+}
